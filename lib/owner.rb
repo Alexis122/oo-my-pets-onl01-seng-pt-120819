@@ -53,7 +53,7 @@ class Owner
   end
 
   def list_pets
-    "I have #{pets[:fishes].length} fish, #{pets[:dogs].length} dog(s), and #{pets[:cats].length} cat(s)."
+    "I have #{pets[:fishes].length} dog(s), and #{pets[:cats].length} cat(s)."
   end
 
   def sell_pets
@@ -72,8 +72,6 @@ human2 = Owner.new("human2")
 
 Owner.all
 
-human.buy_fish("bubbles")
-human.buy_fish("flounder")
 human.buy_cat("fluffy")
 human.buy_cat("whiskers")
 human.buy_dog("fido")
